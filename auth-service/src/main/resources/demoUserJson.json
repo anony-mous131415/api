@@ -1,0 +1,15 @@
+{
+
+"/v2/auth/user-privileges.*" : {
+	"name" : "Demo Licensee"
+},
+
+"/v2/auth/userinfo.*" : {
+	"selectedLicensee" : {
+		"name" : "Demo Licensee"
+	}
+}
+
+
+
+}

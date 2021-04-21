@@ -1,0 +1,55 @@
+
+buildscript {
+	    repositories {
+	        maven {
+	            url artifactoryRepoUrl
+	            credentials {
+	                username = artifactoryReaderUsername
+	                password = artifactoryReaderPassword
+	            }
+	            
+	        }
+	        mavenCentral()
+	        jcenter()
+	    }
+	    dependencies {
+	        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:4.5.0"
+	    }
+}
+
+subprojects {
+    apply plugin: 'java'    
+	apply plugin: 'eclipse'
+	apply plugin: 'maven-publish'
+    apply plugin: 'maven'
+    apply plugin: "com.jfrog.artifactory"
+
+	repositories {
+	        mavenCentral()
+	        jcenter()
+	        maven { 
+	            url = artifactoryRepoUrl
+	                    credentials {
+	                                username = artifactoryReaderUsername
+	                                password = artifactoryReaderPassword
+	                        }
+	                }
+	}
+
+    dependencies {
+        testCompile group: 'junit', name: 'junit', version: '4.12'
+    }
+
+	artifactory {
+	    contextUrl = artifactoryContextUrl
+	    publish {
+	        repository {
+	            repoKey =  artifactorySnapshotRepoKey
+	            username = artifactoryPublishUsername
+	            password = artifactoryPublishPassword
+	        }     
+	    }
+	}
+
+
+}

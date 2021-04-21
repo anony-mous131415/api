@@ -1,0 +1,5 @@
+rootProject.name = 'rest-apis'
+include 'api-common'
+include 'api-service'
+include 'auth-service'
+include 'query-builder'

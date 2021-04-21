@@ -1,0 +1,907 @@
+{
+
+"/v2/api/menucrumbs" : {
+	"advertiser" : {
+		"menuList" : {
+			"name" : "Demo Advertiser"
+		}
+	},
+	"campaign" : {
+		"menuList" : {
+			"name" : "Demo Campaign"
+		}
+	},
+	"strategy" : {
+		"menuList" : {
+			"name" : "Demo Strategy"
+		}
+	},
+	"creative" : {
+		"menuList" : {
+			"name" : "Demo Creative"
+		}
+	
+	},
+	"app_audience" : {
+		"menuList" : {
+			"name" : "Demo Audience"
+		}
+	
+	},
+	"web_audience" : {
+		"menuList" : {
+			"name" : "Demo Audience"
+		}
+	
+	},
+	"dmp_audience" : {
+		"menuList" : {
+			"name" : "Demo Audience"
+		}
+	
+	}
+	
+
+},
+
+"/v2/api/advertisers/smarttag/.*" : {
+	"name": "Demo",
+	"appImgSource" : "http://data.atomex.net/data/5258/1x1.gif?client_id=6804&android_id=&os=&advertising_id=&t=&f=&id=&cn=&scn=\n",
+	"imgSource" : "<!-- RevX remarketing tag - Start -->\n\n<!-- Pass values through the query params in url below\nt = BUSINESS TYPE ( r - retail , h - hotels, p - holiday packages, f - flights, t - trains, b - bus, d - deals)\nf = PAGE TYPE (v - home page, b - category page, c - product page, s - add to cart, p - transaction confirmation page)\nid = ID OF THE PRODUCT (comma separted, if multiple). Entire string to be escaped\ncn = NAME OF THE PRODUCT CATEGORY (comma separted, if multiple). Entire string to be escaped\nscn = NAME OF THE PRODUCT SUB CATEGORY (comma separted, if multiple). Entire string to be escaped\n-->\n \n<img src=\"\/\/data.atomex.net\/data\/4999\/1x1.gif?client_id=6691&t=&f=&id=&cn=&scn=\" width=\"1\" height=\"1\" style=\"display:none\" \/>\n<img src=\"\/\/synccdn.atomex.net\/getuid?dsc=1&ag=PUBMATIC\" width=\"1\" height=\"1\" style=\"display:none\" \/>\n<img src=\"\/\/synccdn.atomex.net\/getuid?dsc=1&ag=ADEX\" width=\"1\" height=\"1\" style=\"display:none\" \/>\n<img src=\"\/\/synccdn.atomex.net\/getuid?dsc=1&ag=FBX\" width=\"1\" height=\"1\" style=\"display:none\" \/>\n<img src=\"\/\/synccdn.atomex.net\/getuid?dsc=1&ag=RUBICON\" width=\"1\" height=\"1\" style=\"display:none\" \/>\n \n<!-- RevX remarketing tag - End-->\n",
+	"jsSource" : "<!-- RevX remarketing tag - Start -->\n<script type=\"text\/javascript\">\n\twindow._atm_client_id = \"6691\";\n\twindow._atm_params = new Object;\n\t\/\/ Pass in data parameters as applicable on each page\n\t\/\/ If you want to pass in multiple values, use javascript array\n\t\/\/ Example: _atm_params.id = [\"123\", \"345\"]\n\t_atm_params.t = \"\";   \/\/-- INSERT BUSINESS TYPE ( r - retail , h - hotels, p - holiday packages, f - flights, t - trains, b - bus, d - deals)\n\t_atm_params.f = \"\"; \/\/-- INSERT PAGE TYPE (v - home page, b - category page, c - product page, s - add to cart, p - transaction confirmation page)\n\t_atm_params.id = \"\"; \/\/-- INSERT ID OF THE PRODUCT\n\t_atm_params.cn = \"\"; \/\/-- INSERT NAME OF THE PRODUCT CATEGORY\n\t_atm_params.scn = \"\"; \/\/-- INSERT NAME OF THE PRODUCT SUB CATEGORY\n\n\tvar ast=document.createElement('script'); ast.type=\"text\/javascript\";\n\tast.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + \"\/\/cdn.atomex.net\/static\/js\/pxs\/\" + _atm_client_id + \"\/ast.js\";\n\tdocument.body.appendChild(ast);\n<\/script>\n<!-- RevX remarketing tag - End-->\n"
+},
+
+"/v2/api/advertisers/.*" : {
+	"name" : "Demo Advertiser",
+	"contactAddress":"IndiQube Lexington, situated at Municipal, No.18, 2nd Cross Road, Chikka Audugodi, Bengaluru - 560 029, India",
+	"contactNumber":"1234567890",
+	"domain":"affle.com",
+	"androidDeclareUrl":"https://DemoAndroidDeclareUrl.com",
+	"androidPhoneBundle":"com.affle.android",
+	"androidTabletBundle":"com.affle.android",
+	"iosDeclareUrl":"https://DemoIosDeclareUrl.com",
+	"iosPhoneBundle":"9876543210",
+	"iosTabletBundle":"9876543210",
+	"webDeclareUrl" : "http://DemoWebDeclareUrl.com",
+	"email" : "india@affle.com",
+	"licensee" : {
+		"name" : "Demo Licensee"
+	}
+	
+},
+
+"/v2/api/campaigns.*" : {
+	"name" : "Demo Campaign",
+	"licensee" : {
+		"name" : "Demo Licensee"
+	},
+	"pixel" : {
+		"name" : "Demo Pixel"
+	}
+},
+
+"/v2/api/catalog/feeds/.*" : {
+	"name" : "Demo Feed",
+	"source" : "Demo Source"
+},
+"/v2/api/catalog/feeds?.*" : {
+	"data" : {
+		"name" : "Demo Feed",
+		"source" : "Demo Source"
+		
+	}
+
+},
+"/v2/api/catalog/variables.*" : {
+	"data" : {
+		"samples" : "Demo Sample"
+		
+	}
+},
+
+"/v2/api/clickdestinations/.*" : {
+	"name" : "Demo ClickDestination",
+	"androidClickUrl":"https://DemoAndroidClickUrl.com",
+	"androidS2sClickTrackingUrl":"https://DemoAndroidS2sClickTrackingUrl.com",
+	"clickUrl":"https://DemoClickUrl.com",
+	"iosClickUrl":"https://DemoIosClickUrl.com",
+	"iosS2sClickTrackingUrl":"https://DemoIosS2sClickTrackingUrl.com",
+	"serverTrackingUrl":"https://DemoServerTrackingUrl.com",
+	"webClickUrl":"https://DemoWebClickUrl.com",
+	"webS2sClickTrackingUrl":"https://DemoWebS2sClickTrackingUrl.com"
+},
+"/v2/api/clickdestinations/search.*" : {
+	"data" : {
+		"name" : "Demo ClickDestination",
+		"androidClickUrl":"https://DemoAndroidClickUrl.com",
+		"androidS2sClickTrackingUrl":"https://DemoAndroidS2sClickTrackingUrl.com",
+		"clickUrl":"https://DemoClickUrl.com",
+		"iosClickUrl":"https://DemoIosClickUrl.com",
+		"iosS2sClickTrackingUrl":"https://DemoIosS2sClickTrackingUrl.com",
+		"serverTrackingUrl":"https://DemoServerTrackingUrl.com",
+		"webClickUrl":"https://DemoWebClickUrl.com",
+		"webS2sClickTrackingUrl":"https://DemoWebS2sClickTrackingUrl.com",
+		"androidImpressionTracker" : "https://DemoAndroidImpressionTracker.com",
+		"iosImpressionTracker" : "https://DemoIosImpressionTracker.com"
+	}
+},
+"/v2/api/creatives/.*" : {
+	"name" : "Demo Creative",
+	"originalFileName":"Demo OriginalFileName",
+	"previewUrl":"https://cdn.atomex.net/atomex-ui/static/Demo-files/revx.png",
+	"thirdPartyAdTag":"DemoThirdPartyAdTag",
+	"urlPath":"/atomex-ui/static/Demo-files/revx.png",
+	"content" : "Demo html content",
+	"advertiser" : {
+		"name" :"Demo Advertiser"
+		
+	},
+	"clickDestination" : {
+		"name" : "Demo ClickDestination",
+		"androidClickUrl":"https://DemoAndroidClickUrl.com",
+		"androidS2sClickTrackingUrl":"https://DemoAndroidS2sClickTrackingUrl.com",
+		"clickUrl":"https://DemoClickUrl.com",
+		"iosClickUrl":"https://DemoIosClickUrl.com",
+		"iosS2sClickTrackingUrl":"https://DemoIosS2sClickTrackingUrl.com",
+		"serverTrackingUrl":"https://DemoServerTrackingUrl.com",
+		"webClickUrl":"https://DemoWebClickUrl.com",
+		"webS2sClickTrackingUrl":"https://DemoWebS2sClickTrackingUrl.com"
+	
+	},
+	"nativeAsset" : {
+		"iconurl":"https://cdn.atomex.net/atomex-ui/static/Demo-files/revxlogo.png",
+		"previewTitle" : "Demo Title",
+		"previewBody" : "Demo Body",
+		"title" : "Demo Title"
+	},
+	"vastCreative" : {
+		"videoLink":"https://cdn.atomex.net/atomex-ui/static/Demo-files/videoAd1.mp4"
+		},
+	"videoAttributes" : {
+		"videoPath":"https://cdn.atomex.net/atomex-ui/static/Demo-files/videoAd1.mp4",
+		"companionPath" : "https://cdn.atomex.net/atomex-ui/static/Demo-files/videoAd1img.jpg"
+	}
+},
+"/v2/api/creatives/search.*" : {
+	"data" : {
+		"name" : "Demo Creative",
+		"advertiser" : {
+			"name" : "Demo Advertiser"
+		},
+		"previewUrl" : "https://cdn.atomex.net/atomex-ui/static/Demo-files/revx.png",
+		"urlPath" : "/atomex-ui/static/Demo-files/revx.png" 
+	}
+},
+"/v2/api/pixels/.*/trackingcode" : {
+	"name": "Demo",
+	"appImgSource" : "http:\/\/trk.atomex.net\/cgi-bin\/tracker.fcgi\/conv?px=10755&android_id=&os=&advertising_id=&ty=1&tid=&tamt=",
+	"imgSource" : "<!-- RevX Remarketing Conversion Pixel -->\n\n<!-- Pass values through the query params in url below\n tid = ID OF THE TRANSACTION\n tamt = AMOUNT OF THE TRANSACTION\n -->\n<img src=\"\/\/trk.atomex.net\/cgi-bin\/tracker.fcgi\/conv?px=10755&ty=1&tid=&tamt=\" \/>",
+	"jsSource" : "<!-- RevX Remarketing Conversion Pixel -->\n\n<!-- Pass values through the query params in url below\n tid = ID OF THE TRANSACTION\n tamt = AMOUNT OF THE TRANSACTION\n -->\n<script type=\"text\/javascript\" src=\"\/\/trk.atomex.net\/cgi-bin\/tracker.fcgi\/conv?px=10755&ty=1&tid=&tamt=\"><\/script>"
+},
+
+"/v2/api/pixels/.*" : {
+	"name": "Demo Pixel",
+	"advertiserPojo" : {
+		"name" : "Demo Advertiser",
+		"licensee" : {
+			"name" : "Demo Licensee"
+		}
+	}
+},
+"/v2/api/pixels/search.*" : {
+	"data" : {
+		"name": "Demo Pixel",
+		"advertiserPojo" : {
+			"name" : "Demo Advertiser",
+			"licensee" : {
+				"name" : "Demo Licensee"
+			}
+	}
+	
+	}
+},
+
+"/v2/api/strategies/quickEdit/.*" : {
+	"name": "Demo"
+},
+
+"/v2/api/strategies/.*" : {
+	"name" : "Demo Strategy",
+	"licensee" : {
+			"name" : "Demo Licensee"
+	},
+	"advertiser" : {
+		"name" :"Demo Advertiser",
+		"parent" : {
+			"name" : "Demo"
+		}
+	},
+	"targetSegments" : {
+		"blockedSegments" : {
+			"name" : "Demo Audience"
+		},
+		"targetedSegments" : {
+			"name" : "Demo Audience"
+		}
+	
+	},
+	"targetAppSegments" : {
+	 	"blockedSegments" : {
+			"name" : "Demo Audience"
+		},
+		"targetedSegments" : {
+			"name" : "Demo Audience"
+		}
+	 },
+	 "targetDmpSegments" : {
+	 	"blockedSegments" : {
+			"name" : "Demo Audience"
+		},
+		"targetedSegments" : {
+			"name" : "Demo Audience"
+		}
+	 },
+	 "targetWebSegments" : {
+	 	"blockedSegments" : {
+			"name" : "Demo Audience"
+		},
+		"targetedSegments" : {
+			"name" : "Demo Audience"
+		}
+	 },
+	"apps" :{
+	 	"name" : "Demo"
+	},
+	"appsStrategies" : {
+		"name" : "Demo"
+	},
+	"campaign" : {
+		"name" : "Demo Campaign"
+	},
+	"channels" : {
+		"name" : "Demo"
+	},
+	"creatives" : {
+		"name" : "Demo Creatives",
+		"imageUrl" : "/atomex-ui/static/Demo-files/revx.png"
+	},
+	"deliveryPriority" : {
+		"name" : "Demo"
+	},
+	"pixels":{
+		"name" : "Demo Pixel"
+	},
+	"placements":{
+		"name" : "Demo"
+	}
+	
+},
+
+"/v2/api/detail/.*" : {
+	"name" : "Demo",
+	"parent" : {
+		"name" : "Demo"
+		}
+},
+
+"/v2/api/audience/dmp/synced" : {
+	"name" : "Demo Audience",
+	"licensee" : {
+			"name" : "Demo Licensee"
+	},
+	"advertiser" : {
+		"name" :"Demo Advertiser"
+	},
+	"pixelDataFile" : {
+		"name" : "Demo"
+	},
+	"pixelDataSchedule" : {
+		"url" : "https://DemoUrl.com",
+		"username":"DemoUserName",
+		"password":"DemoPassword",
+		"remoteFile":{
+			"url":"https://DemoURL.com",
+			"username":"DemoUserName",
+			"password":"DemoPassword",
+			"host":"affle.com",
+			"Keypath":"DemoKeyPath"
+		}
+	}
+},
+
+"/v2/api/audience/.*/sync_remote" : {
+	"name" : "Demo"
+},
+
+"/v2/api/audience/.*" : {
+	"name" : "Demo Audience",
+	"licensee" : {
+			"name" : "Demo Licensee"
+	},
+	"advertiser" : {
+		"name" :"Demo Advertiser"
+	},
+	"description" : "Demo Description",
+	"pixelDataFile" : {
+		"name" : "Demo"
+	},
+	"pixelDataSchedule" : {
+		"url" : "http://demoURL.com",
+		"username":"DemoUserName",
+		"password":"DemoPassword",
+		"remoteFile":{
+			"url":"https://DemoURL.com",
+			"username":"DemoUserName",
+			"password":"DemoPassword",
+			"host":"affle.com",
+			"Keypath":"DemoKeyPath",
+			"pathTemplate" : "DemoPathTemplate"
+		}
+	}
+},
+
+"/v2/api/appsettings.*" : {
+	"settingsKey": "LOGO_LINK",
+	"settingsValue" : "https://cdn.atomex.net/atomex-ui/static/Demo-files/revx.png",
+	"settingsType" : "STRING",
+	"appSettingsProperties" : {
+		"propertyKey": "DIMENSIONS",
+		"propertyValue": "300X300"
+	}
+},
+
+"/v2/api/audience/all.*" : {
+	"data":{
+		"name" : "Demo Audience",
+		"advertiserName" : "Demo Advertiser"
+	}
+},
+
+"/v2/api/slicex/.*" : {
+	"name"  : "Demo"
+},
+
+"/v2/api/slicex/list/advertiser.*" : {
+	
+	"data" : {
+		"name" : "Demo Advertiser"
+	}
+},
+"/v2/api/slicex/list/licensee.*" : {
+	
+	"data" : {
+		"name" : "Demo Licensee"
+	}
+},
+
+"/v2/api/slicex/list/campaign.*" : {
+	
+	"data" : {
+		"name" : "Demo Campaign"
+	}
+},
+"/v2/api/slicex/list/strategy.*" : {
+	
+	"data" : {
+		"name" : "Demo Strategy"
+	}
+},
+
+"/v2/api/slicex/list/creative?.*" : {
+	
+	"data" : {
+		"name" : "Demo Creative"
+	}
+},
+"/v2/api/slicex/list/creativeSize.*" : {
+	
+	"data" : {
+		"nothing to change" : "null"
+	}
+},
+"/v2/api/slicex/list/app.*" : {
+	
+	"data" : {
+		"name" : "Demo App"
+	}
+},
+"/v2/api/slicex/list/pixel.*" : {
+	
+	"data" : {
+		"name" : "Demo Pixel"
+	}
+},
+
+"/v2/api/performance/.*" : {
+	"results" :{
+		"advertiser" : {
+			"name" : "Demo Advertiser"
+		},
+		"licensee" : {
+			"name" : "Demo Licensee"
+		},
+		"strategy" : {
+			"name" : "Demo Strategy"
+		},
+		"campaign" : {
+			"name" : "Demo Campaign"
+		},
+		"creative" : {
+			"name" : "Demo Creative"
+		},
+		"site" : {
+			"name" : "Demo Site"
+		}
+	}
+},
+"/v2/api/performance.*csv" : {
+	"fileName" : "Demo.csv"
+
+},
+"/v2/api/chart/csv" : {
+	"fileName" : "Demo.csv",
+	"fileDownloadUrl" : "http://downloadbeta.atomex.net/Demo.csv"
+},
+
+
+"/v2/api/ADVERTISER.*" : {
+	
+	"name" : "Demo Advertiser"
+
+},
+
+"/v2/api/CAMPAIGN.*" : {
+	
+	"name" : "Demo Campaign"
+
+},
+"/v2/api/LICENSEE.*" : {
+	
+	"name" : "Demo Licensee"
+
+},
+"/v2/api/MMP.*" : {
+	
+	"nothing_to_change" : "null"
+
+},
+"/v2/api/STRATEGY.*" : {
+	
+	"name" : "Demo Strategy"
+
+},
+"/v2/api/CREATIVE.*" : {
+	
+	"name" : "Demo Creative"
+
+},
+
+"/v2/api/PIXEL.*" : {
+	
+	"name" : "Demo Pixel"
+
+},
+"/v2/api/SITE.*" : {
+	
+	"name" : "Demo Site"
+
+},
+"/v2/api/AUDIENCE.*" : {
+	
+	"name" : "Demo Audience"
+
+},
+"/v2/api/DMP_AUDIENCE.*" : {
+	
+	"name" : "Demo Audience"
+
+},
+"/v2/api/detail/ADVERTISER.*" : {
+	
+	"name" : "Demo Advertiser",
+	"parent" : {
+		"name" : "Demo Licensee"
+	}
+
+},
+
+"/v2/api/detail/CAMPAIGN.*" : {
+	
+	"name" : "Demo Campaign",
+	"parent" : {
+		
+		"name" : "Demo Advertiser",
+		"parent" : {
+			"name" : "Demo Licensee"
+		}
+	}
+
+},
+"/v2/api/detail/LICENSEE.*" : {
+	
+	"name" : "Demo Licensee"
+
+},
+"/v2/api/detail/MMP.*" : {
+	
+	"nothing_to_change" : "null"
+
+},
+"/v2/api/detail/STRATEGY.*" : {
+	
+	"name" : "Demo Strategy",
+	"parent" : {
+		"name" : "Demo Campaign",
+		"parent" : {
+		
+			"name" : "Demo Advertiser",
+			"parent" : {
+				"name" : "Demo Licensee"
+			}
+	}
+	}
+
+},
+"/v2/api/detail/CREATIVE.*" : {
+	
+	"name" : "Demo Creative"
+
+},
+
+"/v2/api/detail/PIXEL.*" : {
+	
+	"name" : "Demo Pixel"
+
+},
+"/v2/api/detail/SITE.*" : {
+	
+	"name" : "Demo Site"
+
+},
+"/v2/api/detail/AUDIENCE.*" : {
+	
+	"name" : "Demo Audience"
+
+},
+"/v2/api/detail/DMP_AUDIENCE.*" : {
+	
+	"name" : "Demo Audience"
+
+},
+"/v2/api/detaildictionary/ADVERTISER.* " : {
+	
+	"data" : {
+		
+		 "name" : "Demo Advertiser"
+		}
+	
+
+},
+
+"/v2/api/detaildictionary/LICENSEE.*" : {
+	
+	"data" : {
+		
+		 "name" : "Demo Licensee"
+		}
+	
+
+},
+"/v2/api/detaildictionary/STRATEGY.*" : {
+	
+	"data" : {
+		
+		 "name" : "Demo Strategy"
+		}
+	
+
+},
+"/v2/api/detaildictionary/MMP.*" : {
+	
+	"data" : {
+		
+		 "nothing_to_change" : "null"
+		}
+	
+
+},
+"/v2/api/detaildictionary/CAMPAIGN.*" : {
+	
+	"data" : {
+		
+		 "name" : "Demo Campaign"
+		}
+	
+
+},
+"/v2/api/detaildictionary/AUDIENCE.*" : {
+	
+	"data" : {
+		
+		 "name" : "Demo Audience"
+		}
+	
+
+},
+"/v2/api/detaildictionary/DMP_AUDIENCE.*" : {
+	
+	"data" : {
+		
+		 "name" : "Demo Audience"
+		}
+	
+
+},
+"/v2/api/detaildictionary/PIXEL.*" : {
+	
+	"data" : {
+		
+		 "name" : "Demo Pixel"
+		}
+	
+
+},
+"/v2/api/detaildictionary/SITE.*" : {
+	
+	"data" : {
+		
+		 "name" : "Demo Site"
+		}
+	
+
+},
+
+"/v2/api/detaildictionary/CREATIVE.*" : {
+	
+	"data" : {
+		
+		 "name" : "Demo Creative",
+		 "imageUrl" : "https://cdn.atomex.net/atomex-ui/static/Demo-files/revx.png"
+		}
+	
+
+},
+
+"/v2/api/detaildictionary/ADVERTISER_LOGO.*" : {
+
+		"data" : {
+
+			"logoKey" : "LOGO_LINK",
+			"logoLink" : "https://cdn.atomex.net/atomex-ui/static/Demo-files/revx.png"
+		}
+
+
+	},
+
+"/v2/api/detaildictionary/ADVERTISER_DEFAULT_LOGO.*" : {
+
+		"data" : {
+
+			"logoKey" : "LOGO_LINK",
+			"logoLink" : "https://cdn.atomex.net/atomex-ui/static/Demo-files/revx.png"
+		}
+
+
+	},
+"/v2/api/dictionary/LICENSEE.*" : {
+	
+	"data" : {
+		
+		 "name" : "Demo Licensee"
+		}
+	
+
+},
+"/v2/api/dictionary/ADVERTISER.*" : {
+	
+	"data" : {
+		
+		 "name" : "Demo Advertiser"
+		}
+	
+
+},
+"/v2/api/dictionary/CAMPAIGN.*" : {
+	
+	"data" : {
+		
+		 "name" : "Demo Campaign"
+		}
+	
+
+},
+"/v2/api/dictionary/STRATEGY.*" : {
+	
+	"data" : {
+		
+		 "name" : "Demo Strategy"
+		}
+	
+
+},
+"/v2/api/dictionary/PIXEL.*" : {
+	
+	"data" : {
+		
+		 "name" : "Demo Pixel"
+		}
+	
+
+},
+"/v2/api/dictionary/CREATIVE.*" : {
+	
+	"data" : {
+		
+		 "name" : "Demo Creative"
+		}
+	
+
+},"/v2/api/dictionary/AUDIENCE.*" : {
+	
+	"data" : {
+		
+		 "name" : "Demo Audience"
+		}
+	
+
+},
+"/v2/api/dictionary/DMP_AUDIENCE.*" : {
+	
+	"data" : {
+		
+		 "name" : "Demo Audience"
+		}
+	
+
+},
+"/v2/api/dictionary/SITE.*" : {
+	
+	"data" : {
+		
+		 "name" : "Demo Site"
+		}
+	
+
+},
+"/v2/api/list/.*" : {
+	
+	"data" : {
+		"name" : "Demo",
+		
+		"advertiser" :{
+		 "name" : "Demo Advertiser"
+		},
+		"strategy" :{
+		 "name" : "Demo Strategy"
+		},
+		"campaign" :{
+		 "name" : "Demo Campaign"
+		},
+		"creative" : {
+			"name" : "Demo Creative"
+
+		}
+	}
+},
+"/v2/api/list/STRATEGY.*" : {
+	"data" : {
+		"name" : "Demo Strategy",
+		
+		"strategy" :{
+		 "name" : "Demo Strategy"
+		}
+
+}},
+"/v2/api/list/ADVERTISER.*" : {
+	"data" : {
+		"name" : "Demo Advertiser",
+		
+		"advertiser" :{
+		 "name" : "Demo Advertiser"
+		}
+
+}},
+"/v2/api/list/CREATIVE.*" : {
+	"data" : {
+		"name" : "Demo Creative",
+		
+		"creative" :{
+		 "name" : "Demo Creative"
+		}
+
+}},
+
+"/v2/api/list/CAMPAIGN.*" : {
+	"data" : {
+		"name" : "Demo Campaign",
+		"campaign" :{
+		 "name" : "Demo Campaign"
+		}
+	}
+
+},
+"/v2/api/list/.*/csv" : {
+	"fileDownloadUrl" : "http://download.atomex.net/Demo.csv",
+	"fileName" : "Demo.csv"
+},
+"/v2/api/searchbyname/LICENSEE.*" : {
+	
+	"menuList" : {
+		"name" : "Demo Licensee"
+	} 
+},
+"/v2/api/searchbyname/ADVERTISER.*" : {
+	
+	"menuList" : {
+		"name" : "Demo Advertiser"
+	} 
+},
+"/v2/api/searchbyname/CAMPAIGN.*" : {
+	
+	"menuList" : {
+		"name" : "Demo Campaign"
+	} 
+},
+"/v2/api/searchbyname/STRATEGY.*" : {
+	
+	"menuList" : {
+		"name" : "Demo Strategy"
+	} 
+},
+"/v2/api/searchbyname/CREATIVE.*" : {
+	
+	"menuList" : {
+		"name" : "Demo Creative"
+	} 
+},
+"/v2/api/searchbyname/SITE.*" : {
+	
+	"menuList" : {
+		"name" : "Demo Site"
+	} 
+},
+"/v2/api/searchbyname/APP_AUDIENCE.*" : {
+	
+	"menuList" : {
+		"name" : "Demo Audience"
+	} 
+},
+"/v2/api/searchbyname/WEB_AUDIENCE.*" : {
+	
+	"menuList" : {
+		"name" : "Demo Audience"
+	} 
+},
+"/v2/api/searchbyname/DMP_AUDIENCE.*" : {
+	
+	"menuList" : {
+		"name" : "Demo Audience"
+	} 
+},
+"/v2/api/searchbyname/PIXEL.*" : {
+	
+	"menuList" : {
+		"name" : "Demo Pixel"
+	} 
+},
+
+"/v2/api/activity/log.*" : {
+ 
+	"entity_name" : "Demo Entity",
+	"user_name" : "demo@affle.com"
+},
+
+"/v2/api/activity/detail.*" : {
+	"entity_name" : "Demo Entity",
+	"user_name" : "demo@affle.com",
+	"changes": {
+		"oldValue": "Old value",
+		"newValue": "New value"
+	}
+},
+
+"/v2/api/.*" : {
+	"name" : "Demo"
+}
+
+}

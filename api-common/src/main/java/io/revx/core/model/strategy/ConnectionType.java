@@ -1,0 +1,5 @@
+package io.revx.core.model.strategy;
+
+public enum ConnectionType {
+  UNKNOWN, ETHERNET, WIFI, CELLULAR_NETWORK, CELLULAR_NETWORK_2G, CELLULAR_NETWORK_3G, CELLULAR_NETWORK_4G, CELLULAR_NETWORK_5G
+}

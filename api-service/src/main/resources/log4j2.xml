@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%style{%d{ISO8601}}{black} %highlight{%-5level }[%style{%t}{bright,blue}] %style{%C{1.}}{bright,green} %L : %msg%n%throwable" />
+		</Console>
+
+		<RollingFile name="RollingFile"
+			fileName="/atom/api-service/logs/api-service.log"
+			filePattern="/atom/api-service/logs/$${date:yyyy-MM}/api-service-%d{-dd-MMMM-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<pattern>%d - %X{urid}- %X{userName} - %p %C{1.} %L [%t] %m%n</pattern>
+			</PatternLayout>
+			<Policies>
+				<!-- rollover on startup, daily and when the file reaches 10 MegaBytes -->
+				<OnStartupTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="500 MB" />
+				<TimeBasedTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="uiLogFile"
+			fileName="/atom/api-service/logs/ui-logging.log"
+			filePattern="/atom/api-service/logs/$${date:yyyy-MM}/ui-logging-%d{-dd-MMMM-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<pattern>%d - %X{urid} - %p %C{1.} [%t] %m%n
+				</pattern>
+			</PatternLayout>
+			<Policies>
+				<!-- rollover on startup, daily and when the file reaches 10 MegaBytes -->
+				<OnStartupTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="500 MB" />
+				<TimeBasedTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+	</Appenders>
+
+	<Loggers>
+		<!-- LOG everything at INFO level -->
+		<Root level="debug">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="RollingFile" />
+		</Root>
+
+		<Logger name="com.revx" level="debug"></Logger>
+		<Logger name="uiLogger" additivity="false">
+			<AppenderRef ref="uiLogFile" />
+		</Logger>
+	</Loggers>
+
+</Configuration>
